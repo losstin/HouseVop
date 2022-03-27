@@ -1,0 +1,135 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+/* Header CSS */
+@import "components/header.css";
+/* Navbar CSS */
+@import "components/navbar.css";
+/* Other CSS */
+@import "components/others.css";
+/* Section CSS */
+@import "components/section.css";
+/* Bootstrap skins */
+@import "components/bootstrap-skins.css";
+/* Footer */
+@import "components/footer.css";
+
+
+.font1 {
+    font-family: 'Raleway', sans-serif;
+}
+.font2 {
+    font-family: 'Playfair Display', serif;  
+}
+.font3 {
+    font-family: 'Roboto', sans-serif;
+}
+.text-accent {
+    color: #D4C17F;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+    font-size: 16px;
+    min-width: 280px;
+    background: #242b33;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;  
+    font-size: 48px;
+    line-height: 64px;
+    font-weight: 700;
+    color: #D4C17F;
+    margin-bottom: 50px !important;
+}
+h2 {
+    font-family: 'Playfair Display', serif;  
+    font-style: 36px;
+    font-weight: 700;
+    color: #D4C17F;
+    margin-bottom: 50px !important;
+
+}
+p {
+    line-height: 24px;
+    margin-bottom: 0;
+}
+
+a:hover {
+    color: #D4C17F;
+}
+.link_unstyled {
+    text-decoration: none;
+    color: #fff;
+}
+.posr {
+    position: relative !important;
+}
+.fz13 {
+    font-size: 13px;
+}
+.d-block {
+    display: block;
+}
+.btn {
+    font-family: 'Playfair Display', serif;  
+    display: inline-block;
+    line-height: 1;
+    font-weight: 500;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 0;
+    color: #fff;
+    transition: all .9s ease-out;
+}
+#faq button {
+    height: 48px;
+}
+.btn-accent {
+    background: #D4C17F;
+    color: #fff;
+    padding: 12px;
+    font-family:  'Raleway', sans-serif;
+    height: 100%;
+}
+.btn:hover {
+    color:  #5e4d10;
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+.w100 {
+    width: 100%;
+}
+h5.room__title:hover {
+    transition: all .9s ease-out;
+}
+
+
+@media (max-width: 992px){
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px){
+    h1 {
+        font-size: 38px;
+        line-height: 54px;
+    }
+    h2 {
+        margin-bottom: 20px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 28px;
+        line-height: 37px;
+    }
+}

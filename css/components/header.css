@@ -1,0 +1,97 @@
+.header {
+    position: relative;
+    min-height: 840px;
+    background:url('../../img/header_img/Rectangle.jpg') center / cover ;
+    display: flex;
+    align-items: flex-end;
+}
+.header__content {
+    position: relative;
+    text-align: center;
+    max-width: 582px;
+    margin: auto;
+    height: 100%;
+    z-index: 2;
+}
+.header__content-contacts {
+    margin-top: 340px;
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+.header__element-contacts--item {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: all .9s ease-out;
+}
+
+.header__element-contacts--item [class*="icon-"] {
+    margin-right: 15px;
+}
+
+
+
+
+
+.header__content-mouse-effect {
+    position: absolute;
+    top: 209px;
+    left: 50%;
+    transform: translateY(-50%);
+    animation: bouncing 0.9s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both;
+}
+
+
+  @keyframes bouncing{
+    0%{
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+  }
+    
+
+
+  @media (max-width: 1200px) {
+      .header {
+          min-height: 700px;
+      }
+      .header__content-contacts {
+          margin-top: 230px;
+      }
+  }
+
+  @media (max-width: 576px) {
+      .header {
+        min-height: 435px;
+        background: linear-gradient(to top, #242B33 11.98%,
+        rgba(45, 52, 60, 0.38) 51.04%,
+        #242B33 92.19%) , url(../../img/header_img/Rectangle.jpg) center / cover;
+      }
+      .header__content-mouse-effect {
+          display: none;
+      }
+      .header__content-contacts {
+          margin-top: 89px;
+          padding-bottom: 15px;
+          flex-flow: column wrap;
+      }
+      .header__element-contacts--item {
+          justify-content: center;
+          margin-bottom: 15px;
+      }
+      .header__content h1 {
+          max-width: 384px;
+          margin: auto;
+      }
+      .header__element-contacts--item {
+          font-weight: 400;
+          font-size: 18px;
+      }
+  }
